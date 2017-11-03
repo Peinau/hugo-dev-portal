@@ -1,0 +1,1 @@
+FROM peinau.azurecr.io/hugo-doc-generator:1.0.0
