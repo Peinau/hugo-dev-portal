@@ -1,4 +1,8 @@
-## 2. Crear una Intención de Captura
+---
+title: "2. Crear una Intención de Captura"
+description: ""
+weight: 20
+---
 
 Luego de haber obtenido el **access_token** y con la información mínima del cliente, se debe crear una **intención de captura**.
 
@@ -79,4 +83,4 @@ Detalle de las URLs generadas:
 + URL 1 (**rel: self**): desde esta URL puedes consultar la información de la intención de captura.
 + URL 2 (**rel: capture_url**): desde esta URL debes acceder al formulario de captura de la tarjeta.
 
-Ir al paso [3. Mostrar formulario de Captura de tarjeta](formulario-captura-tarjeta.md)
+Ir al paso [3. Mostrar formulario de Captura de tarjeta]({{%relref "api-tokenizacion-pago/formulario-captura-tarjeta.md"%}})

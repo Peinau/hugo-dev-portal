@@ -1,8 +1,12 @@
-## 1. Obtener un Token de Acceso
+---
+title: "1. Obtener un Token de Acceso"
+description: ""
+weight: 20
+---
 
 Al completar el registro de la aplicación (Alta del Comercio), obtendrás dos llaves con las cuales te podrás autenticar en el sistema, a estas les llamamos **client_id** (identificador) y **client_secret** (Clave Secreta).
 
-![Ejemplo de client_id y client_secret](images/portal-1.png)
+![Ejemplo de client_id y client_secret](https://github.com/Peinau/peinau-dev-portal/blob/master/articles/pasarela-de-pagos/api-tokenizacion-pago/images/portal-1.png)
 
 Con estas credenciales podrás obtener el **token de acceso** llamando a la **API de Autenticación** de la siguiente forma:
 
@@ -30,4 +34,4 @@ Como respuesta obtendrás el **access_token**:
 
 Con el **access_token** generado, ya puedes comenzar a usar nuestras APIs para completar los pasos siguientes. 
 
-Ir al paso [2. Crear una Intención de Captura](crear-intencion-captura.md)
+Ir al paso [2. Crear una Intención de Captura]({{%relref "api-tokenizacion-pago/crear-intencion-captura.md"%}})

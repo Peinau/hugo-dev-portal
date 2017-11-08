@@ -1,6 +1,10 @@
-## 4. Intención de Pago
+---
+title: "4. Intención de Pago"
+description: ""
+weight: 20
+---
 
-Para completar el pago con el **token de la tarjeta** debes ingresar el **id** obtenido previamente de la **return_url** en el campo **capture_token** de la petición a la API de **Intención de Pago /payments**, el **access_token** generado en el [paso 1](obtener-token-acceso.md) y hacer el llamado de la siguiente forma:
+Para completar el pago con el **token de la tarjeta** debes ingresar el **id** obtenido previamente de la **return_url** en el campo **capture_token** de la petición a la API de **Intención de Pago /payments**, el **access_token** generado en el [paso 1]({{%relref "api-tokenizacion-pago/obtener-token-acceso.md"%}}) y hacer el llamado de la siguiente forma:
 
 ```
 curl -X POST 'https://api.sandbox.connect.fif.tech/checkout/payments' \
@@ -154,6 +158,6 @@ Obtendrás los Links:
 - **self**: desde esta URL puedes consultar la información de la captura.
 - **approval_url**: desde esta URL el cliente debe autorizar el pago.
 - **reverse_method**: para anular la transacción, debes hacer el llamado a este endpoint desde la [API de Anulación](../../anulaciones/introduccion.md).
-- **silent_charge**: llamando a este endpoint desde la [API silent_charge](cargo-tarjeta.md) puedes ejecutar el cargo a la tarjeta de cŕedito del cliente sin pasar por la intención de pago.
+- **silent_charge**: llamando a este endpoint desde la [API silent_charge]({{%relref "api-tokenizacion-pago/cargo-tarjeta.md"%}}) puedes ejecutar el cargo a la tarjeta de cŕedito del cliente sin pasar por la intención de pago.
 
-Ir al paso [5. Realizar el cargo a la tarjeta](cargo-tarjeta.md)
+Ir al paso [5. Realizar el cargo a la tarjeta]({{%relref "api-tokenizacion-pago/cargo-tarjeta.md"%}})

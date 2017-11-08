@@ -1,10 +1,14 @@
-## 5. ¿Cómo realizar el cargo a la tarjeta?
+---
+title: "5. ¿Cómo realizar el cargo a la tarjeta?"
+description: ""
+weight: 20
+---
 
 Te ofrecemos dos opciones para realizar el cargo a la tarjeta del cliente, a continuación podrás ver el detalle de cada una: 
 
 ### 5.1 Approval
 
-Si quieres utilizar esta opción, necesitas que el cliente apruebe el pago para ejecutar el cargo a la tarjeta de crédito. Para ello debes desplegar la ventana de aprobación del pago a partir de la [approval_url](https://quickpay-connect-checkout.azurewebsites.net/payments/gateways/quickpay/token/0fdcd938-62c7-aab2-5048-c2f172d495ac/pay) obtenida en el [paso 3](#3-mostrar-formulario-de-captura-de-tarjeta).
+Si quieres utilizar esta opción, necesitas que el cliente apruebe el pago para ejecutar el cargo a la tarjeta de crédito. Para ello debes desplegar la ventana de aprobación del pago a partir de la [approval_url](https://quickpay-connect-checkout.azurewebsites.net/payments/gateways/quickpay/token/0fdcd938-62c7-aab2-5048-c2f172d495ac/pay) obtenida en el [paso 3]({{%relref "api-tokenizacion-pago/formulario-captura-tarjeta.md"%}}).
 
 ![Ejemplo Approval](Portal04.jpg)
 
@@ -198,4 +202,4 @@ Necesitas el **access_token** obtenido en la **Autenticación** y el **id (Token
  -H "Content-Type: application/json" \
  -H "Authorization: Bearer access_token"
 ```
-[Volver al inicio](../introduction.md)
+[Volver al inicio](..)
