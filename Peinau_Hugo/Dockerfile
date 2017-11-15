@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER dmunozgaete@gmail.com
+LABEL AUTHOR=dmunozgaete@gmail.com
 
 # Install pygments (for syntax highlighting) 
 RUN apt-get -qq update \
