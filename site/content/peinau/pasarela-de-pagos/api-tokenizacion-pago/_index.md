@@ -9,7 +9,7 @@ La integración mediante nuestra API te da un mayor control sobre el checkout en
 Los pasos para realizar la integración son:
 
 
-- [1. Obtener un Token de Acceso]({{%relref "api-tokenizacion-pago/obtener-token-acceso.md"%}})
+- [1. Obtener un Token de Acceso]({{%relref "obtener-token-acceso.md"%}})
 - [2. Crear una Intención de Captura]({{%relref "api-tokenizacion-pago/crear-intencion-captura.md"%}})
 - [3. Mostrar formulario de Captura de tarjeta]({{%relref "api-tokenizacion-pago/formulario-captura-tarjeta.md"%}})
 - [4. Intención de Pago]({{%relref "api-tokenizacion-pago/intención-de-pago.md"%}})
