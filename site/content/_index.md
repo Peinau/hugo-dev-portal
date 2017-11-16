@@ -8,4 +8,6 @@ weight: 20
 
 La plataforma de Quickpay Connect ayuda a los desarrolladores a crear, hacer crecer y monetizar sus negocios.
 
-{{% notice note %}}¿Quieres contribuir con el contenido de PEINAU? [Más Info Aquí]({{%ref "how-to-contribute.md"%}}){{% /notice %}}
+{{% notice info %}}
+¿Quieres contribuir con el contenido de PEINAU? [Más Info Aquí]({{%ref "how-to-contribute.md"%}})
+{{% /notice %}}

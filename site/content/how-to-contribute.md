@@ -35,10 +35,3 @@ In the public peinau-docs repository, automated labels are assigned to pull requ
 * ready-to-merge: Ready for review by our pull request review team.
 
 **CLA**: Contributor License Agremment.
-
-----
-## Intermediate Proxy Pull
-
-Componente Interno que permite la reducción PCI DSS hacia el producto Checkout.
-
-[Guía de Funcionamiento](intermediate-proxy-pull/introduction.md)

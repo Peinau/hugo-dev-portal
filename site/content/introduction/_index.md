@@ -4,13 +4,20 @@ description: ""
 weight: 10
 ---
 
-Esta solución permite recibir pagos de tus clientes en tu sitio de e-commerce. 
+Peinau es una plataforma de pagos... blah
 
-Te puedes integrar de las siguientes formas:
-
-  - [API REST de Tokenización y Pago]({{%relref "api-tokenizacion-pago/_index.md"%}})
-  - [API REST Checkout](api-checkout/introduction.md)
-  - [SDK Javascript](https://github.com/Peinau/peinau-javascript/blob/master/README.md)
-  - [Plugins eCommerce](plugins/introduction.md)
-
-Además tienes la posibilidad de anular tus transacciones mediante nuestra [API REST de Anulaciones](anulaciones/introduction.md)
+{{<mermaid align="left">}}
+graph LR;
+    A[Comercio] -->|Proceso de Pago| B(Peinau)
+    B --> C{Medio de Pago}
+    C --> D[Transbank Webpay]
+    C --> E[CMR Crédito]
+    C --> F[CMR Debito]
+    C --> G[Quickpay Token]
+    C --> H[Banco Falabella]
+    D --> I[Comercio]
+    E --> I[Comercio]
+    F --> I[Comercio]
+    G --> I[Comercio]
+    H --> I[Comercio]
+{{< /mermaid >}}

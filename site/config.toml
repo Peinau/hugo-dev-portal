@@ -3,14 +3,15 @@ languageCode = "en-us"
 DefaultContentLanguage = "en"
 
 title = "Peinau Documentation"
-theme = "docdock"
+theme = "hugo-theme-docdock"
+themesdir = "../themes"
 
 
 [params]
 editURL = "https://github.com/Peinau/hugo-dev-portal/edit/master/site/content/"
-showVisitedLinks = true # default is false
+showVisitedLinks = false # default is false
 themeStyle = "original" # "original" or "flex" # default "original"
-themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
+themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
 ordersectionsby = "weight" # ordersectionsby = "title"
 disableHomeIcon = true # default is false
 disableSearch = false # default is false
@@ -22,17 +23,17 @@ home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
-name = "<i class='fa fa-github'></i> Github repo"
+name = "<i class='fa fa-github'></i>&nbsp;&nbsp;&nbsp;Github repo"
 identifier = "ds"
 url = "https://github.com/Peinau/hugo-dev-portal"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-bullhorn'></i> How to Contribute"
+name = "<i class='fa fa-bullhorn'></i>&nbsp;&nbsp;&nbsp;How to Contribute"
 url = "/how-to-contribute"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-bullhorn'></i> Credits"
+name = "<i class='fa fa-bullhorn'></i>&nbsp;&nbsp;&nbsp;Credits"
 url = "/credits"
 weight = 30
