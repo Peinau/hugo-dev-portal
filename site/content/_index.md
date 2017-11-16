@@ -1,19 +1,11 @@
 ---
-title: "Welcome"
+title: "Portal de Desarrollo Peinau"
 description: ""
 weight: 20
 ---
 
 ## Bienvenido al portal de desarrolladores de Peinau
 
-Si quieres integrar un botón de pagos en tu sitio web de forma fácil, rápida y segura, somos tu mejor opción.
+La plataforma de Quickpay Connect ayuda a los desarrolladores a crear, hacer crecer y monetizar sus negocios.
 
-Además, utilizando Peinau nunca verás la información sensible de la tarjeta y con ello le daras mas seguridad a tus clientes.
-
-Te ofrecemos las siguientes soluciones:
-
-- [Pasarela de pagos]({{% relref "pasarela-de-pagos/_index.md"%}})
-
-- [Motor de fraude]({{% relref "motor-de-fraude/_index.md"%}})
-
-¿Quieres contribuir con el contenido de PEINAU? [Más Info Aquí]({{% relref "how-to-contribute.md"%}})
+{{% notice note %}}¿Quieres contribuir con el contenido de PEINAU? [Más Info Aquí]({{%ref "how-to-contribute.md"%}}){{% /notice %}}

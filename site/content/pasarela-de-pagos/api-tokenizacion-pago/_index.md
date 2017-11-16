@@ -12,5 +12,5 @@ Los pasos para realizar la integración son:
 - [1. Obtener un Token de Acceso]({{%relref "obtener-token-acceso.md"%}})
 - [2. Crear una Intención de Captura]({{%relref "crear-intencion-captura.md"%}})
 - [3. Mostrar formulario de Captura de tarjeta]({{%relref "formulario-captura-tarjeta.md"%}})
-- [4. Intención de Pago]({{%relref "intención-de-pago.md"%}})
+- [4. Intención de Pago]({{%relref "intencion-de-pago.md"%}})
 - [5. Realizar el cargo a la tarjeta]({{%relref "cargo-tarjeta.md"%}})

@@ -2,17 +2,17 @@ baseURL = "/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 
-title = "Peinau Documentation"
-theme = "docdock"
-
+title = "Docdock"
+theme = "hugo-theme-docdock"
+themesdir = "../.."
 
 [params]
-editURL = "https://github.com/Peinau/hugo-dev-portal/edit/master/site/content/"
+editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 showVisitedLinks = true # default is false
 themeStyle = "original" # "original" or "flex" # default "original"
-themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
+themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
 ordersectionsby = "weight" # ordersectionsby = "title"
-disableHomeIcon = true # default is false
+disableHomeIcon = false # default is false
 disableSearch = false # default is false
 disableNavChevron = false # set true to hide next/prev chevron, default is false
 
@@ -24,12 +24,18 @@ home = [ "HTML", "RSS", "JSON"]
 pre = "<h3>More</h3>"
 name = "<i class='fa fa-github'></i> Github repo"
 identifier = "ds"
-url = "https://github.com/Peinau/hugo-dev-portal"
+url = "https://github.com/vjeantet/hugo-theme-docdock"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-bullhorn'></i> How to Contribute"
-url = "/how-to-contribute"
+name = "<i class='fa fa-camera'></i> Showcases"
+url = "/showcase"
+weight = 11
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-bookmark'></i> Hugo Documentation"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
 weight = 20
 
 [[menu.shortcuts]]

@@ -1,7 +1,7 @@
 ---
-title: "Pasarela de Pagos"
+title: "Introducción"
 description: ""
-weight: 20
+weight: 10
 ---
 
 Esta solución permite recibir pagos de tus clientes en tu sitio de e-commerce. 
