@@ -34,6 +34,27 @@ curl -X POST 'https://api.sandbox.connect.fif.tech/tokenization/captures' \
   }
 }' | json_pp
 ```
+**Detalle de los campos enviados**
+
+
+| Nombre        | Tipo            | Descripción  | Requerido |
+| ------------- | --------------- | ------------ | --------- |
+| capture      | Enum  | Tipo de Captura solicitada en la intención.             | Sí |
+| capture_method| Enum | Método de Captura para la tarjeta   | Sí |
+| cardholder | Object        | Datos del tarjeta habiente | Sí |
+| cardholder.reference_id | String        | Identificador externo del comercio | No |
+| cardholder.country | String ([ISO 3166-1 alpha-2][ISO 3166-1 alpha-2])        | País de residencia del tarjeta habiente | Sí |
+| cardholder.name | String      | Nombre del tarjeta habiente tal como se muestra en la tarjeta | Sí |
+| cardholder.email | String      | Email del tarjeta habiente | Sí |
+| billing | String      | Dirección de facturación asociada a la tarjeta  | Sí |
+| billing.line1 | String      | Dirección de facturación | Sí |
+| billing.line2 | String      | Dirección 2 de facturación | No |
+| billing.city | String      | Ciudad para facturación | Sí |
+| billing.state | String      | Comuna de facturación | Sí |
+| billing.country | String ([ISO 3166-1 alpha-2][ISO 3166-1 alpha-2])     | País de facturación| Sí |
+| redirect_urls | Object      | Url de redirección dependiendo del estado de la captura una vez finalizado el proceso de captura | Sí |
+| redirect_urls.return_url | String (Url)      | Url de redirección al producirse una captura exitosa | Sí |
+| redirect_urls.cancel_url | String (Url)      | Url de redirección al producirse una captura fallida | Sí |
 
 Como respuesta obtendrás la siguiente información:
 

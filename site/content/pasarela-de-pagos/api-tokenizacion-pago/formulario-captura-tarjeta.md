@@ -6,11 +6,11 @@ weight: 20
 
 Con la **capture_url** obtenida en el [paso 2]({{%relref "formulario-captura-tarjeta.md"%}}) puedes desplegar el formulario de captura de tarjeta. [Puedes hacer clic aquí para ver un ejemplo de capture_url](https://api.sandbox.connect.fif.tech/tokenization/captures/gateways/credit/card/42743d48-7699-0d00-ef45-a68c587e662d/capture)
 
-![Ejemplo de ventana Formulario](/pasarela-de-pagos/api-tokenizacion-pago/images/portal-1.png)
+![Ejemplo de ventana Formulario](/pasarela-de-pagos/api-tokenizacion-pago/images/captura-tarjeta-1.png)
 
 El cliente debe ingresar los datos solicitados en el formulario y hacer clic en **Usar esta tarjeta** para obtener el token de la tarjeta de crédito.
 
-![Ejemplo datos a ingresar](/pasarela-de-pagos/api-tokenizacion-pago/images/captura-tarjeta-1.png)
+![Ejemplo datos a ingresar](/pasarela-de-pagos/api-tokenizacion-pago/images/captura-tarjeta-2.png)
 
 La respuesta será enviada a la página de confirmacion indicada en la variable **"return_url"** de la petición a la [API de intención de Captura (paso 2)]({{%relref "crear-intencion-captura.md"%}}) o puedes consultar dicha respuesta llamando a la **API Revisión de Captura** de la siguiente forma:
 

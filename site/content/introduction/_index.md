@@ -1,10 +1,14 @@
 ---
-title: "Introducción"
+title: "PEINAU"
 description: ""
 weight: 10
 ---
 
-Peinau es una plataforma de pagos... blah
+Si quieres integrar un botón de pagos en tu sitio web de forma fácil, rápida y segura, somos tu mejor opción.
+
+Además, utilizando Peinau nunca verás la información sensible de la tarjeta y con ello le daras mas seguridad a tus clientes.
+
+**FLUJO DE PAGO**
 
 {{<mermaid align="left">}}
 graph LR;
