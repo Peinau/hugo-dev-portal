@@ -1,1 +1,1 @@
-FROM peinau.azurecr.io/hugo-doc-generator:1.0.0
+FROM dmunozgaete/hugo-docu-api-theme:1.0.2

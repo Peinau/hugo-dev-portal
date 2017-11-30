@@ -1,5 +1,5 @@
 ---
-title: "API REST de Tokenización y Pago"
+title: "Tokenización y Pago"
 description: ""
 weight: 20
 ---

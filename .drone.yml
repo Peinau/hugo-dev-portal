@@ -1,0 +1,28 @@
+pipeline:
+  build:
+    image: node:8.3.0-alpine
+    commands:
+      - npm install -quiet --silent --dev-only
+      # Create Plugin VARS end export to ENV for docker push (http://readme.drone.io/plugins/plugin-parameters/)
+      - export PLUGIN_TAGS=$(node -p "require('./package.json').version"),latest,c-${DRONE_COMMIT_SHA},b-${DRONE_BUILD_NUMBER}
+      - export PLUGIN_REPO_NAME=$(node -p "require('./package.json').name")
+      - export PLUGIN_REPO=$REGISTRY_NAME/$PLUGIN_REPO_NAME
+      - export PLUGIN_REGISTRY=$REGISTRY_NAME
+      - env | grep PLUGIN_ > .env_file && cat .env_file
+    secrets: [ REGISTRY_NAME ]
+
+  docker:
+    image: plugins/docker
+    env_file: .env_file
+    secrets: [ docker_username, docker_password ]
+    when:
+      branch: master
+
+  slack:
+    image: plugins/slack
+    channel: drone_deployments
+    icon_emoji: ":package:"
+    secrets: [ slack_webhook ]
+    when:
+      status: [ success, failure ]
+    

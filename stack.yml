@@ -1,0 +1,42 @@
+version: '3.2'
+services:
+  app:
+    image: peinau.azurecr.io/dev-portal:latest
+    environment:
+      NODE_ENV: sandbox
+    networks:
+      - apps
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: 10
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == worker
+      labels:
+        traefik.docker.network: apps
+        traefik.port: 1313
+        traefik.frontend.rule: Host:dev-portal.${SUBDOMAIN}
+      resources:
+        limits:
+          cpus: '1'
+          memory: 250M
+        reservations:
+          cpus: '0.5'
+          memory: 200M
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+      restart_policy:
+        condition: any
+        delay: 5s
+        max_attempts: 5
+        window: 30s
+
+networks:
+  apps:
+    external: true

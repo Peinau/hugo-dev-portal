@@ -1,0 +1,26 @@
+{
+  "name": "dev-portal",
+  "version": "1.0.0",
+  "description": "Peinau Dev Portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peinau/hugo-dev-portal.git"
+  },
+  "keywords": [
+    "Peinau",
+    "Dev",
+    "Portal",
+    "Developers",
+    "Hugo"
+  ],
+  "author": "David Antonio Muñoz Gaete",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peinau/hugo-dev-portal/issues"
+  },
+  "homepage": "https://github.com/Peinau/hugo-dev-portal#readme"
+}

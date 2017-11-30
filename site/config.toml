@@ -4,7 +4,7 @@ DefaultContentLanguage = "en"
 
 title = "Peinau Documentation"
 theme = "hugo-theme-docdock"
-themesdir = "../themes"
+themesdir = "./../themes"
 
 
 [params]
@@ -16,6 +16,7 @@ ordersectionsby = "weight" # ordersectionsby = "title"
 disableHomeIcon = true # default is false
 disableSearch = false # default is false
 disableNavChevron = false # set true to hide next/prev chevron, default is false
+apiUrl = "https://api.sandbox.connect.fif.tech"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
