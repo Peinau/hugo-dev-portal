@@ -25,5 +25,20 @@ graph LR;
     G --> I[Comercio]
     H --> I[Comercio]
 {{< /mermaid >}}
-    
+
+## ¿Cómo integrar nuestra pasarela de pagos?
+
 Te ofrecemos diversas opciones de integración para que puedas adaptar nuestro producto a las necesidades de tu negocio.
+
+### API Checkout
+  - [Captura de Tarjeta + Checkout]({{%relref "/pasarela-de-pagos/api-tokenizacion-pago/_index.md"%}})
+  - 
+  - [Debit Checkout con Webpay plus](transbank-webpay/introduction.md)
+  
+### SDKs
+  - [SDK Javascript](https://github.com/Peinau/peinau-javascript/blob/master/README.md)
+  
+### Plugins
+  - [Prestashop](https://github.com/Peinau/peinau-plugin-prestashop/blob/master/README.md)
+  - [VTEX]
+  - [WooCommerce]
