@@ -4,9 +4,9 @@ description: ""
 weight: 10
 ---
 
-Si quieres integrar un botón de pagos en tu sitio web de forma fácil, rápida y segura, somos tu mejor opción.
+Si quieres integrar un botón de pagos que te permita controlar el checkout de tu e-commerce de forma fácil, rápida y segura, somos tu mejor opción.
 
-Además, utilizando Peinau nunca verás la información sensible de la tarjeta y con ello le daras mas seguridad a tus clientes.
+Tu cliente podrá seleccionar los artículos que desea adquirir y al momento del checkout será redirigido a nuestra pasarela.
 
 **FLUJO DE PAGO**
 
@@ -25,3 +25,5 @@ graph LR;
     G --> I[Comercio]
     H --> I[Comercio]
 {{< /mermaid >}}
+    
+Te ofrecemos diversas opciones de integración para que puedas adaptar nuestro producto a las necesidades de tu negocio.
