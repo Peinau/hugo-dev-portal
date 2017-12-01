@@ -1,5 +1,5 @@
 ---
-title: "Tokenización y Pago"
+title: "Captura de Tarjeta + Checkout"
 description: ""
 weight: 20
 ---
