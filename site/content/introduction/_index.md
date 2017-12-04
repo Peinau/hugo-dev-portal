@@ -31,7 +31,7 @@ graph LR;
 Te ofrecemos diversas opciones de integración para que puedas adaptar nuestro producto a las necesidades de tu negocio.
 
 ### API Checkout
-  - [Captura de Tarjeta + Checkout]({{%relref "/pasarela-de-pagos/api-tokenizacion-pago/_index.md"%}})
+  - [Captura de Tarjeta + Checkout]({{%relref "../captura-tarjeta-checkout.md"%}})
   - 
   - [Debit Checkout con Webpay plus](transbank-webpay/introduction.md)
   
