@@ -32,10 +32,10 @@ Te ofrecemos diversas opciones de integración para que puedas adaptar nuestro p
 
 {{<mermaid align="left">}}
 graph LR;
-    A[Comercio]
-    A --> B[APIs Checkout]
-    A --> C[SDKs]
-    A --> D[Plugins]
+    A((Comercio))
+    A --> B{APIs Checkout}
+    A --> C{SDKs}
+    A --> D{Plugins}
     B --> E[Captura de Tarjeta + Checkout]
     B --> F[Express Checkout]
     D --> G[Prestashop]
@@ -46,6 +46,8 @@ graph LR;
     
     click E "{{%relref "introduction/captura-tarjeta-checkout.md"%}}" "This is a link"
     click K "(transbank-webpay/introduction.md)" "This is a link"
+    style J fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
+    style K fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
 {{< /mermaid >}}    
 
 ### APIs Checkout
