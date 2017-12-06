@@ -36,13 +36,13 @@ graph LR;
     A --> B[APIs Checkout]
     A --> C[SDKs]
     A --> D[Plugins]
-    B --> E[[Captura de Tarjeta + Checkout]({{%relref "introduction/captura-tarjeta-checkout.md"%}})]
+    B --> E[Captura de Tarjeta + Checkout]
     B --> F[Express Checkout]
     D --> G[Prestashop]
     D --> H[vtex]
     D --> I[woocommerce]
     F --> J[Credit]
-    F --> K[[Debit Checkout con Webpay plus](transbank-webpay/introduction.md)]
+    F --> K[Debit Checkout con Webpay plus]
 {{< /mermaid >}}    
 
 ### APIs Checkout
