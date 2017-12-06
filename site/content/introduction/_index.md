@@ -36,21 +36,23 @@ graph LR;
     A --> B[APIs Checkout]
     A --> C[SDKs]
     A --> D[Plugins]
-    B --> E[Captura de Tarjeta]
+    B --> E[Captura de Tarjeta + Checkout]
     B --> F[Express Checkout]
     D --> G[Prestashop]
     D --> H[vtex]
     D --> I[woocommerce]
     F --> J[Credit]
-    F --> K[Debit Checkout]
+    F --> K[Debit Checkout con Webpay plus]
     
     click E "{{%relref "introduction/captura-tarjeta-checkout.md"%}}" "This is a link"
+    click K "(transbank-webpay/introduction.md)" "This is a link"
 {{< /mermaid >}}    
 
 ### APIs Checkout
   - [Captura de Tarjeta + Checkout]({{%relref "introduction/captura-tarjeta-checkout.md"%}})
-  - 
-  - [Debit Checkout con Webpay plus](transbank-webpay/introduction.md)
+  - Express Checkout
+    - Credit
+    - [Debit Checkout con Webpay plus](transbank-webpay/introduction.md)
   
 ### SDKs
   - [SDK Javascript](https://github.com/Peinau/peinau-javascript/blob/master/README.md)
