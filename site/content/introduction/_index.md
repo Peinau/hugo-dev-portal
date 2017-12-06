@@ -30,7 +30,20 @@ graph LR;
 
 Te ofrecemos diversas opciones de integración para que puedas adaptar nuestro producto a las necesidades de tu negocio.
 
-### API Checkout
+    A{Comercio}
+    A --> B[APIs Checkout]
+    A --> C[SDKs]
+    A --> D[Plugins]
+    B --> E[[Captura de Tarjeta + Checkout]({{%relref "introduction/captura-tarjeta-checkout.md"%}})]
+    B --> F[Express Checkout]
+    D --> G[Prestashop]
+    D --> H[vtex]
+    D --> I[woocommerce]
+    F --> J[Credit]
+    F --> K[[Debit Checkout con Webpay plus](transbank-webpay/introduction.md)]
+    
+
+### APIs Checkout
   - [Captura de Tarjeta + Checkout]({{%relref "introduction/captura-tarjeta-checkout.md"%}})
   - 
   - [Debit Checkout con Webpay plus](transbank-webpay/introduction.md)
