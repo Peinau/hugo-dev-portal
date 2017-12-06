@@ -30,6 +30,8 @@ graph LR;
 
 Te ofrecemos diversas opciones de integración para que puedas adaptar nuestro producto a las necesidades de tu negocio.
 
+{{<mermaid align="left">}}
+graph LR;
     A{Comercio}
     A --> B[APIs Checkout]
     A --> C[SDKs]
