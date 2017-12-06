@@ -32,17 +32,19 @@ Te ofrecemos diversas opciones de integración para que puedas adaptar nuestro p
 
 {{<mermaid align="left">}}
 graph LR;
-    A{Comercio}
+    A[Comercio]
     A --> B[APIs Checkout]
     A --> C[SDKs]
     A --> D[Plugins]
-    B --> E[Captura de Tarjeta + Checkout]
+    B --> E[Captura de Tarjeta]
     B --> F[Express Checkout]
     D --> G[Prestashop]
     D --> H[vtex]
     D --> I[woocommerce]
     F --> J[Credit]
-    F --> K[Debit Checkout con Webpay plus]
+    F --> K[Debit Checkout]
+    
+    click E "{{%relref "introduction/captura-tarjeta-checkout.md"%}}" "This is a link"
 {{< /mermaid >}}    
 
 ### APIs Checkout
