@@ -43,7 +43,7 @@ graph LR;
     D --> I[woocommerce]
     F --> J[Credit]
     F --> K[[Debit Checkout con Webpay plus](transbank-webpay/introduction.md)]
-    
+{{< /mermaid >}}    
 
 ### APIs Checkout
   - [Captura de Tarjeta + Checkout]({{%relref "introduction/captura-tarjeta-checkout.md"%}})
