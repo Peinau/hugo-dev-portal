@@ -16,7 +16,7 @@ weight: 10
 
 Al completar el registro de la aplicación (Alta del Comercio), obtendrás dos llaves con las cuales te podrás autenticar en el sistema, a estas les llamamos **client_id** (identificador) y **client_secret** (Clave Secreta).
 
-![Ejemplo de client_id y client_secret](images/portal-1.png)
+![Ejemplo de client_id y client_secret](/split-checkout/images/portal-1.png)
 
 Con estas credenciales podrás obtener el **token de acceso** llamando a la **API de Autenticación** de la siguiente forma:
 
@@ -135,21 +135,21 @@ description: ""
 weight: 10
 ---
 
-Con la **capture_url** obtenida en el [paso 2](crear-intencion-captura.md) puedes desplegar el formulario de captura de tarjeta. [Puedes hacer clic aquí para ver un ejemplo de capture_url](https://api.sandbox.connect.fif.tech/tokenization/captures/gateways/credit/card/42743d48-7699-0d00-ef45-a68c587e662d/capture)
+Con la **capture_url** obtenida en el **paso 2** puedes desplegar el formulario de captura de tarjeta. [Puedes hacer clic aquí para ver un ejemplo de capture_url](https://api.sandbox.connect.fif.tech/tokenization/captures/gateways/credit/card/42743d48-7699-0d00-ef45-a68c587e662d/capture)
 
-![Ejemplo de ventana Formulario](images/captura-tarjeta-1.png)
+![Ejemplo de ventana Formulario](/split-checkout/images/captura-tarjeta-1.png)
 
 El cliente debe ingresar los datos solicitados en el formulario y hacer clic en **Usar esta tarjeta** para obtener el token de la tarjeta de crédito.
 
-![Ejemplo datos a ingresar](images/captura-tarjeta-1.png)
+![Ejemplo datos a ingresar](/split-checkout/images/captura-tarjeta-2.png)
 
-La respuesta será enviada a la página de confirmacion indicada en la variable **"return_url"** de la petición a la [API de intención de Captura (paso 2)](crear-intencion-captura.md) o puedes consultar dicha respuesta llamando a la **API Revisión de Captura** de la siguiente forma:
+La respuesta será enviada a la página de confirmacion indicada en la variable **"return_url"** de la petición a la **API de intención de Captura (paso 2)** o puedes consultar dicha respuesta llamando a la **API Revisión de Captura** de la siguiente forma:
 
 ```
  curl -X GET 'https://api.sandbox.connect.fif.tech/tokenization/captures/{{id}}'
 ```
 
-> Debes reemplazar el **id** por el obtenido en la respuesta de la **API de captura /captures** [paso 2](crear-intencion-captura.md).
+> Debes reemplazar el **id** por el obtenido en la respuesta de la **API de captura /captures** **paso 2**.
 
 **Ejemplo de respuesta enviada a la return_url:**
 
@@ -201,7 +201,7 @@ description: ""
 weight: 10
 ---
 
-Para completar el pago con el **token de la tarjeta** debes ingresar el **id** obtenido previamente de la **return_url** en el campo **capture_token** de la petición a la API de **Intención de Pago /payments**, el **access_token** generado en el [paso 1](obtener-token-acceso.md) y hacer el llamado de la siguiente forma:
+Para completar el pago con el **token de la tarjeta** debes ingresar el **id** obtenido previamente de la **return_url** en el campo **capture_token** de la petición a la API de **Intención de Pago /payments**, el **access_token** generado en el **paso 1** y hacer el llamado de la siguiente forma:
 
 ```
 curl -X POST 'https://api.sandbox.connect.fif.tech/checkout/payments' \
@@ -356,8 +356,8 @@ Obtendrás los Links:
 
 - **self**: desde esta URL puedes consultar la información de la captura.
 - **approval_url**: desde esta URL el cliente debe autorizar el pago.
-- **reverse_method**: para anular la transacción, debes hacer el llamado a este endpoint desde la [API de Anulación](../../anulaciones/introduccion.md).
-- **silent_charge**: llamando a este endpoint desde la [API silent_charge](cargo-tarjeta.md) puedes ejecutar el cargo a la tarjeta de cŕedito del cliente sin pasar por la intención de pago.
+- **reverse_method**: para anular la transacción, debes hacer el llamado a este endpoint desde la **API de Anulación**.
+- **silent_charge**: llamando a este endpoint desde la **API silent_charge** puedes ejecutar el cargo a la tarjeta de cŕedito del cliente sin pasar por la intención de pago.
 
 ---
 title: "5. ¿Cómo realizar el cargo a la tarjeta?"
@@ -369,9 +369,9 @@ Te ofrecemos dos opciones para realizar el cargo a la tarjeta del cliente, a con
 
 ### 5.1 Approval
 
-Si quieres utilizar esta opción, necesitas que el cliente apruebe el pago para ejecutar el cargo a la tarjeta de crédito. Para ello debes desplegar la ventana de aprobación del pago a partir de la [approval_url](https://quickpay-connect-checkout.azurewebsites.net/payments/gateways/quickpay/token/0fdcd938-62c7-aab2-5048-c2f172d495ac/pay) obtenida en el [paso 3](#3-mostrar-formulario-de-captura-de-tarjeta).
+Si quieres utilizar esta opción, necesitas que el cliente apruebe el pago para ejecutar el cargo a la tarjeta de crédito. Para ello debes desplegar la ventana de aprobación del pago a partir de la [approval_url](https://quickpay-connect-checkout.azurewebsites.net/payments/gateways/quickpay/token/0fdcd938-62c7-aab2-5048-c2f172d495ac/pay) obtenida en el **paso 3**.
 
-![Ejemplo Approval](images/approval-1.png)
+![Ejemplo Approval](/split-checkout/images/approval-1.png)
 
 Si recibes una respuesta con **"state": "paid"** en la URL indicada como **return_url** o consultando desde la **URL self**, entonces el cliente ha aprobado del pago y se ejecuta el cargo a la tajeta de crédito.
 
@@ -637,7 +637,7 @@ Posibles estados de la transacción:
 | canceled | El cargo no fue realizado |
 | reversed | Tiene al menos una devolución asociada |
 
-Además, agregamos información específica del código entregado por el Gateway CyberSource (Estructura resume del JSON de respuesta). [Ver la lista de códigos de respuesta CyberSource aquí](cybersource_reason_code.md).
+Además, agregamos información específica del código entregado por el Gateway CyberSource (Estructura resume del JSON de respuesta). [Ver la lista de códigos de respuesta CyberSource aquí].
 
-Si deseas hacer la devolución al cliente, debes llamar a [API de Anulación](../../anulaciones/introduccion.md).
+Si deseas hacer la devolución al cliente, debes llamar a [API de Anulación].
 
