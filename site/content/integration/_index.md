@@ -20,8 +20,6 @@ graph LR;
     F --> J[Credit]
     F --> K[Debit Checkout con Webpay plus]
     
-    click E "{{%relref "introduction/captura-tarjeta-checkout.md"%}}" "This is a link"
-    click K "(transbank-webpay/introduction.md)" "This is a link"
     style J fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
     style K fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
 {{< /mermaid >}}    
