@@ -1,5 +1,5 @@
 ---
-title: "1. ¿Cómo integrar nuestra pasarela de pagos?"
+title: "2. ¿Cómo integrar nuestra pasarela de pagos?"
 description: ""
 weight: 10
 ---
