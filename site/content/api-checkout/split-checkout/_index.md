@@ -8,15 +8,11 @@ La integración mediante nuestra API te da un mayor control sobre el checkout en
 
 Los pasos para realizar la integración son:
 
----
-title: "1. Obtener un Token de Acceso"
-description: ""
-weight: 10
----
+### 1. Obtener un Token de Acceso
 
 Al completar el registro de la aplicación (Alta del Comercio), obtendrás dos llaves con las cuales te podrás autenticar en el sistema, a estas les llamamos **client_id** (identificador) y **client_secret** (Clave Secreta).
 
-![Ejemplo de client_id y client_secret](/split-checkout/images/portal-1.png)
+![Ejemplo de client_id y client_secret](/images/portal-1.png)
 
 Con estas credenciales podrás obtener el **token de acceso** llamando a la **API de Autenticación** de la siguiente forma:
 
@@ -44,11 +40,7 @@ Como respuesta obtendrás el **access_token**:
 
 Con el **access_token** generado, ya puedes comenzar a usar nuestras APIs para completar los pasos siguientes. 
 
----
-title: "2. Crear una Intención de Captura"
-description: ""
-weight: 10
----
+### 2. Crear una Intención de Captura
 
 Luego de haber obtenido el **access_token** y con la información mínima del cliente, se debe crear una **intención de captura**.
 
@@ -129,19 +121,15 @@ Detalle de las URLs generadas:
 + URL 1 (**rel: self**): desde esta URL puedes consultar la información de la intención de captura.
 + URL 2 (**rel: capture_url**): desde esta URL debes acceder al formulario de captura de la tarjeta.
 
----
-title: "3. Mostrar Formulario de Captura de tarjeta"
-description: ""
-weight: 10
----
+### 3. Mostrar Formulario de Captura de tarjeta
 
 Con la **capture_url** obtenida en el **paso 2** puedes desplegar el formulario de captura de tarjeta. [Puedes hacer clic aquí para ver un ejemplo de capture_url](https://api.sandbox.connect.fif.tech/tokenization/captures/gateways/credit/card/42743d48-7699-0d00-ef45-a68c587e662d/capture)
 
-![Ejemplo de ventana Formulario](/split-checkout/images/captura-tarjeta-1.png)
+![Ejemplo de ventana Formulario](/images/captura-tarjeta-1.png)
 
 El cliente debe ingresar los datos solicitados en el formulario y hacer clic en **Usar esta tarjeta** para obtener el token de la tarjeta de crédito.
 
-![Ejemplo datos a ingresar](/split-checkout/images/captura-tarjeta-2.png)
+![Ejemplo datos a ingresar](/images/captura-tarjeta-2.png)
 
 La respuesta será enviada a la página de confirmacion indicada en la variable **"return_url"** de la petición a la **API de intención de Captura (paso 2)** o puedes consultar dicha respuesta llamando a la **API Revisión de Captura** de la siguiente forma:
 
@@ -195,11 +183,7 @@ Tabla de posibles respuestas:
 | captured | Se ha capturado la información de la tarjeta |
 | canceled | Ocurrio un error y no se pudo completar la captura |
 
----
-title: "4. Intención de Pago"
-description: ""
-weight: 10
----
+### 4. Intención de Pago
 
 Para completar el pago con el **token de la tarjeta** debes ingresar el **id** obtenido previamente de la **return_url** en el campo **capture_token** de la petición a la API de **Intención de Pago /payments**, el **access_token** generado en el **paso 1** y hacer el llamado de la siguiente forma:
 
@@ -359,19 +343,15 @@ Obtendrás los Links:
 - **reverse_method**: para anular la transacción, debes hacer el llamado a este endpoint desde la **API de Anulación**.
 - **silent_charge**: llamando a este endpoint desde la **API silent_charge** puedes ejecutar el cargo a la tarjeta de cŕedito del cliente sin pasar por la intención de pago.
 
----
-title: "5. ¿Cómo realizar el cargo a la tarjeta?"
-description: ""
-weight: 10
----
+### 5. ¿Cómo realizar el cargo a la tarjeta?
 
 Te ofrecemos dos opciones para realizar el cargo a la tarjeta del cliente, a continuación podrás ver el detalle de cada una: 
 
-### 5.1 Approval
+#### 5.1 Approval
 
 Si quieres utilizar esta opción, necesitas que el cliente apruebe el pago para ejecutar el cargo a la tarjeta de crédito. Para ello debes desplegar la ventana de aprobación del pago a partir de la [approval_url](https://quickpay-connect-checkout.azurewebsites.net/payments/gateways/quickpay/token/0fdcd938-62c7-aab2-5048-c2f172d495ac/pay) obtenida en el **paso 3**.
 
-![Ejemplo Approval](/split-checkout/images/approval-1.png)
+![Ejemplo Approval](/images/approval-1.png)
 
 Si recibes una respuesta con **"state": "paid"** en la URL indicada como **return_url** o consultando desde la **URL self**, entonces el cliente ha aprobado del pago y se ejecuta el cargo a la tajeta de crédito.
 
@@ -500,7 +480,7 @@ Posibles estados de la transacción:
 | canceled | El cargo no fue realizado |
 | reversed | Tiene al menos una devolución asociada |
 
-### 5.2 Silent Charge
+#### 5.2 Silent Charge
 
 Con esta opción, no es requerida la aprobación del cliente para ejecutar el cargo a la tarjeta de crédito.
 
