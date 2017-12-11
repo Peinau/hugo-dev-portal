@@ -1,5 +1,5 @@
 ---
-title: "Captura de Tarjeta + Checkout"
+title: "Split Checkout (captura de tarjeta + pago)"
 description: ""
 weight: 20
 ---
