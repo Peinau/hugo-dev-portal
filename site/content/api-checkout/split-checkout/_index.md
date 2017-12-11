@@ -617,10 +617,9 @@ Posibles estados de la transacción:
 | canceled | El cargo no fue realizado |
 | reversed | Tiene al menos una devolución asociada |
 
-Además, agregamos información específica del código entregado por el Gateway CyberSource (Estructura resume del JSON de respuesta). [Ver la lista de códigos de respuesta CyberSource aquí].
+Además, agregamos información específica del código entregado por el Gateway CyberSource (Estructura resume del JSON de respuesta).
 
-
-{{%expand "Cybersource Reason Codes" %}}
+{{%expand "**Clic aqui para ver "Cybersource Reason Codes"**" %}}
 
 | Reason Code | Description                              |
 | ----------- | ---------------------------------------- |
@@ -662,7 +661,7 @@ Además, agregamos información específica del código entregado por el Gateway
 | 247         | You requested a credit for a capture that was previously voided. Possible action: No action required. |
 | 250         | The request was received, but there was a timeout at the payment processor. Possible action: To avoid duplicating the transaction, do not resend the request until you have reviewed the transaction status in the Business Center. |
 | 254         | Stand-alone credits are not allowed. Possible action: Submit a follow-on credit by including a request ID in the credit request. A follow-on credit must be requested within 60 days of the authorization. To process stand-alone credits, contact your CyberSource account representative to find out if your processor supports stand-alone credits. |
-.{{% /expand%}}
+{{% /expand%}}
 
 
 Si deseas hacer la devolución al cliente, debes llamar a [API de Anulación].
