@@ -619,7 +619,7 @@ Posibles estados de la transacción:
 
 Además, agregamos información específica del código entregado por el Gateway CyberSource (Estructura resume del JSON de respuesta).
 
-{{%expand "**Clic aqui para ver "Cybersource Reason Codes"**" %}}
+{{%expand "**Clic aqui para ver Cybersource Reason Codes**" %}}
 
 | Reason Code | Description                              |
 | ----------- | ---------------------------------------- |
