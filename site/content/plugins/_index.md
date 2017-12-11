@@ -4,8 +4,10 @@ description: ""
 weight: 10
 ---
 
-{{%Plugins" %}}  
+{{%expand "Plugins" %}}
 - [Prestashop](https://github.com/Peinau/peinau-plugin-prestashop/blob/master/README.md)
 - [VTEX]
-- [WooCommerce].{{% /expand%}}
+- [WooCommerce]
+.{{% /expand%}}
+
 
