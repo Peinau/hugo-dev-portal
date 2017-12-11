@@ -27,7 +27,7 @@ graph LR;
 {{< /mermaid >}}    
 
 ### APIs Checkout
-  - [Captura de Tarjeta + Checkout]({{%relref "introduction/captura-tarjeta-checkout.md"%}})
+  - [Split Checkout (captura de tarjeta + pago)]({{%relref "introduction/captura-tarjeta-checkout.md"%}})
   - Express Checkout
     - Credit
     - [Debit Checkout con Webpay plus](transbank-webpay/introduction.md)
