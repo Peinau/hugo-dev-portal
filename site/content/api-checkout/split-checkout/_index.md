@@ -491,7 +491,7 @@ Necesitas el **access_token** obtenido en la **Autenticación** y el **id (Token
  -H "Content-Type: application/json" \
  -H "Authorization: Bearer access_token"
 ```
-Obtendras una respuesta similar a:
+{{%expand "Clic aqui para ver Ejemplo de respuesta" %}}
 
 ```
 {
@@ -608,6 +608,7 @@ Obtendras una respuesta similar a:
     }
 }
 ```
+{{% /expand%}}
 
 Posibles estados de la transacción:
 
@@ -619,7 +620,7 @@ Posibles estados de la transacción:
 
 Además, agregamos información específica del código entregado por el Gateway CyberSource (Estructura resume del JSON de respuesta).
 
-{{%expand "**Clic aqui para ver Cybersource Reason Codes**" %}}
+{{%expand "Clic aqui para ver Cybersource Reason Codes" %}}
 
 | Reason Code | Description                              |
 | ----------- | ---------------------------------------- |
