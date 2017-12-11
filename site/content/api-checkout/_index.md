@@ -4,7 +4,7 @@ description: ""
 weight: 10
 ---
 
-  - [Split Checkout (captura de tarjeta + pago)]({{%relref "introduction/captura-tarjeta-checkout.md"%}})
+  - [Split Checkout (captura de tarjeta + pago)]
   - Express Checkout
     - Credit
-    - [Debit Checkout con Webpay plus](transbank-webpay/introduction.md)
+    - [Debit Checkout con Webpay plus]
