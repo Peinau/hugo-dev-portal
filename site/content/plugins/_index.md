@@ -1,5 +1,5 @@
 ---
-title: "Plugins"
+title: "5. Plugins"
 description: ""
 weight: 10
 ---
