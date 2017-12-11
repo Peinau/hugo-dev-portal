@@ -26,16 +26,3 @@ graph LR;
     style K fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
 {{< /mermaid >}}    
 
-### APIs Checkout
-  - [Split Checkout (captura de tarjeta + pago)]({{%relref "introduction/captura-tarjeta-checkout.md"%}})
-  - Express Checkout
-    - Credit
-    - [Debit Checkout con Webpay plus](transbank-webpay/introduction.md)
-  
-### SDKs
-  - [SDK Javascript](https://github.com/Peinau/peinau-javascript/blob/master/README.md)
-  
-### Plugins
-  - [Prestashop](https://github.com/Peinau/peinau-plugin-prestashop/blob/master/README.md)
-  - [VTEX]
-  - [WooCommerce]
