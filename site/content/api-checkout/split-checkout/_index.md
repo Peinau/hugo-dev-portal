@@ -12,7 +12,7 @@ Los pasos para realizar la integración son:
 
 Al completar el registro de la aplicación (Alta del Comercio), obtendrás dos llaves con las cuales te podrás autenticar en el sistema, a estas les llamamos **client_id** (identificador) y **client_secret** (Clave Secreta).
 
-![Ejemplo de client_id y client_secret](/split-checkout/images/portal-1.png)
+![Ejemplo de client_id y client_secret](/api-checkout/split-checkout/images/portal-1.png)
 
 Con estas credenciales podrás obtener el **token de acceso** llamando a la **API de Autenticación** de la siguiente forma:
 
