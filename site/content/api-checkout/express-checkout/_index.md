@@ -1,10 +1,14 @@
 ---
-title: "Express checkout"
+title: "Debit checkout con Webpay Plus"
 description: ""
 weight: 10
 ---
 
-Los pasos para realizar la integración son:
+Recibe pagos online con la solución Transbank Webpay a través de PEINAU.
+
+Con esto podrás potenciar tus ventas online ya que permitirás que tus clientes paguen sus compras electrónicas con Tarjetas de débito, integrándose al paso final del flujo del carro de compras.
+
+Para integrarte debes seguir los siguientes pasos:
 
 ## 1. Obtener un Token de Acceso
 
