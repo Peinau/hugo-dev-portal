@@ -4,7 +4,12 @@ description: ""
 weight: 10
 ---
 
-  - [Split Checkout (captura de tarjeta + pago)]
-  - Express Checkout
-    - Credit
-    - [Debit Checkout con Webpay plus]
+{{<mermaid align="left">}}
+graph LR;
+    A{APIs Checkout}
+    A --> B[Split Checkout (captura de tarjeta + pago)]
+    A --> C[Express Checkout]
+    C --> D[Credit]
+    C --> E[Debit checkout con Webpay Plus]
+{{< /mermaid >}}
+
