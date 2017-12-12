@@ -93,5 +93,3 @@ La variable de entorno ```MYSQL_ROOT_PASSWORD``` debe especificar la clave que t
 * Password Root MySQL: La especificada previamente en ```MYSQL_ROOT_PASSWORD```.
 
 {{% /expand%}}
-
-
