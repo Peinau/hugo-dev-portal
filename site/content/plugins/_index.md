@@ -4,7 +4,7 @@ description: ""
 weight: 10
 ---
 
-{{%expand "PRESTASSOP" %}}
+{{%expand "PRESTASHOP" %}}
 
 # Módulo Prestashop para Peinau
 
