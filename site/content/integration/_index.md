@@ -12,15 +12,12 @@ graph LR;
     A --> B{APIs Checkout}
     A --> C{SDKs}
     A --> D{Plugins}
-    B --> E[Captura de Tarjeta + Checkout]
-    B --> F[Express Checkout]
-    D --> G[Prestashop]
-    D --> H[vtex]
-    D --> I[woocommerce]
-    F --> J[Credit]
-    F --> K[Debit Checkout con Webpay plus]
-    
-    style J fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
-    style K fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
+    B --> E[Split Checkout]
+    B --> F[Credit Express Checkout]
+    B --> G[Debit Checkout con Webpay plus]
+    D --> H[Prestashop]
+    D --> I[VTEX]
+    D --> J[WooCommerce]
+
 {{< /mermaid >}}    
 
