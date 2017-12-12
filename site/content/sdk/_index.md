@@ -50,7 +50,7 @@ If you want to use the advanced javascript integrations, you will need a way to 
 
 ### Development
 
-Please feel free to follow the [Contribution Guidelines](how-to-contribute) to contribute to this repository. PRs are welcome, but for major changes please raise an issue first.
+Please feel free to follow the [Contribution Guidelines](/how-to-contribute) to contribute to this repository. PRs are welcome, but for major changes please raise an issue first.
 
 
 #### Debugging messages
