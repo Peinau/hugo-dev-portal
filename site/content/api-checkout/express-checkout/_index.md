@@ -1,12 +1,10 @@
 ---
-title: "Debit checkout con Webpay Plus"
+title: "Credit Express Checkout"
 description: ""
 weight: 10
 ---
 
-Recibe pagos online con la solución Transbank Webpay a través de PEINAU.
-
-Con esto podrás potenciar tus ventas online ya que permitirás que tus clientes paguen sus compras electrónicas con Tarjetas de débito, integrándose al paso final del flujo del carro de compras.
+Con esta solución sólo debes mostrar un formulario al cliente, esto facilitará el proceso de checkout.
 
 Para integrarte debes seguir los siguientes pasos:
 
@@ -60,7 +58,7 @@ curl -X POST 'https://api.sandbox.connect.fif.tech/checkout/payments' \
        "documentNumber": "123123123",
        "documentType": "RUT"
      }, 
-     "payment_method": "TRANSBANK_WEBPAY"
+     "payment_method": "QUICKPAY_TOKEN"
    }, 
    "transaction": { 
      "reference_id": "OD0000233", 
@@ -110,7 +108,7 @@ Como respuesta obtendrás la siguiente información:
 ```
 {
     "intent": "sale",
-    "application": "6d717967-8288-0089-69d1-a6a0b7cce54e",
+    "application": "28adb999-7a2e-70b8-c092-e4c16a9e9e0a",
     "redirect_urls": {
         "return_url": "https://requestb.in/sfoogtsf",
         "cancel_url": "https://chao.com"
@@ -137,7 +135,7 @@ Como respuesta obtendrás la siguiente información:
                 "country_code": "CL",
                 "phone": "+56 9 1234 5674",
                 "type": "HOME_OR_WORK",
-                "recipient_name": "JL Prueba 1"
+                "recipient_name": "Andres Roa"
             }
         },
         "amount": {
@@ -156,14 +154,14 @@ Como respuesta obtendrás la siguiente información:
             "documentType": "RUT",
             "documentNumber": "123123123",
             "country": "CL",
-            "full_name": "JL Prueba 1",
+            "full_name": "Andres Roa",
             "email": "jlprueba1@quickpay.com"
         },
-        "payment_method": "TRANSBANK_WEBPAY"
+        "payment_method": "QUICKPAY_TOKEN"
     },
     "links": [
         {
-            "href": "https://api.sandbox.connect.fif.tech/checkout/payments/d8536e18-3632-fdcb-f2ed-45d8390e8ab9",
+            "href": "https://api.sandbox.connect.fif.tech/checkout/payments/864f3629-07a1-56d1-31a9-cce39026b9a1",
             "rel": "self",
             "security": [
                 "ApiKey"
@@ -171,12 +169,25 @@ Como respuesta obtendrás la siguiente información:
             "method": "GET"
         },
         {
-            "href": "https://api.sandbox.connect.fif.tech/checkout/payments/gateways/transbank/webpay/d8536e18-3632-fdcb-f2ed-45d8390e8ab9/pay",
+            "href": "https://api.sandbox.connect.fif.tech/checkout/payments/gateways/quickpay/token/864f3629-07a1-56d1-31a9-cce39026b9a1/pay",
             "rel": "approval_url",
             "method": "REDIRECT"
         },
         {
-            "href": "https://api.sandbox.connect.fif.tech/checkout/payments/gateways/transbank/webpay/d8536e18-3632-fdcb-f2ed-45d8390e8ab9/reverse",
+            "href": "https://api.sandbox.connect.fif.tech/checkout/payments/864f3629-07a1-56d1-31a9-cce39026b9a1/edit",
+            "rel": "update_url",
+            "method": "PUT"
+        },
+        {
+            "href": "https://api.sandbox.connect.fif.tech/checkout/payments/gateways/quickpay/token/864f3629-07a1-56d1-31a9-cce39026b9a1/silent",
+            "rel": "silent_charge",
+            "security": [
+                "Jwt"
+            ],
+            "method": "POST"
+        },
+        {
+            "href": "https://api.sandbox.connect.fif.tech/checkout/payments/gateways/quickpay/token/864f3629-07a1-56d1-31a9-cce39026b9a1/reverse",
             "rel": "reverse_method",
             "security": [
                 "Jwt"
@@ -184,11 +195,11 @@ Como respuesta obtendrás la siguiente información:
             "method": "POST"
         }
     ],
-    "id": "d8536e18-3632-fdcb-f2ed-45d8390e8ab9",
-    "create_time": "2017-11-20T16:09:20.944Z",
-    "update_time": "2017-11-20T16:09:20.944Z",
+    "id": "864f3629-07a1-56d1-31a9-cce39026b9a1",
+    "create_time": "2017-12-12T01:50:09.578Z",
+    "update_time": "2017-12-12T01:50:09.578Z",
     "state": "created",
-    "invoice_number": "INPA-50000000499"
+    "invoice_number": "INPA-50000000922"
 }
 ```
 
@@ -196,27 +207,26 @@ Obtendrás los Links:
 
 - **self**: desde esta URL puedes consultar la información de la captura.
 - **approval_url**: debes desplegar esta URL al cliente para que pueda continuar con el pago.
+- **silent_charge**: con esta opción, no es requerida la aprobación del cliente para ejecutar el cargo a la tarjeta de crédito (debes tener el token de la tarjeta).
 - **reverse_method**: te permite anular la transacción.
 
-## 3. Mostrar Formulario de Pago Transbank Webpay
+## 3. Mostrar Formulario de Pago
 
-Con la **approval_url** obtenida en el **paso 2** puedes desplegar el formulario de pago con Transbank Webpay.
+Con la **approval_url** obtenida en el **paso 2** puedes desplegar el formulario de pago.
 
 FOTO [Ejemplo de Formulario Transbank]
 
-**Datos de prueba WebPay plus:**
+**Datos de prueba:**
 
-> |Número de Tarjeta|RUT|Password|
+> |Número de Tarjeta|CCV|Fecha de vencimiento|
 > |---|---|---|
-> |4051885600446623|11.111.111-1|123|
+> |4111111111111111|123|02/2020|
 
-Desde este punto, el cliente interactua directamente con WebPay plus. 
-
-Una vez finalizada la transacción, PEINAU devuelve el resultado de esta a la URL que indicaste en el request a la API **intención de pago** **(paso 2)**.
+Al hacer clic en aprobar pago, finaliza la transacción y se ejecuta el cargo a la tarjeta de crédito dle cliente. En este punto, PEINAU devuelve el resultado de la transacción a la URL que indicaste en el request a la API **intención de pago** **(paso 2)**.
 
 ## 4. Consulta de Estado de la Transacción
 
-Con la url **self** obtenida en el **paso 2** puedes consultar el estado de la transacción de la siguiente forma:
+Con la url **self** obtenida en el **paso 2** debes consultar el estado de la transacción de la siguiente forma:
 
 ```
 curl -X GET \
@@ -250,7 +260,7 @@ Obtendrás una respuesta similar a:
                     "quantity": 1,
                     "price": 4500,
                     "tax": 0,
-                    "_id": "5a14412d3d3d6b001405ef48"
+                    "_id": "5a2f35d14bddb8000f673f25"
                 }
             ],
             "shipping_address": {
@@ -259,7 +269,7 @@ Obtendrás una respuesta similar a:
                 "country_code": "CL",
                 "phone": "+56 9 1234 5674",
                 "type": "HOME_OR_WORK",
-                "recipient_name": "JL Prueba 1"
+                "recipient_name": "Andres Roa"
             }
         },
         "amount": {
@@ -278,38 +288,70 @@ Obtendrás una respuesta similar a:
             "documentType": "RUT",
             "documentNumber": "123123123",
             "country": "CL",
-            "full_name": "JL Prueba 1",
+            "full_name": "Andres Roa",
             "email": "jlprueba1@quickpay.com"
         },
-        "payment_method": "TRANSBANK_WEBPAY"
+        "payment_method": "QUICKPAY_TOKEN"
     },
     "links": [],
-    "id": "ffd9367d-5a9f-92de-fb24-0276a3156bf1",
-    "create_time": "2017-11-21T15:07:26.024Z",
-    "update_time": "2017-11-21T15:08:45.185Z",
+    "id": "864f3629-07a1-56d1-31a9-cce39026b9a1",
+    "create_time": "2017-12-12T01:50:09.578Z",
+    "update_time": "2017-12-12T01:58:10.246Z",
     "state": "paid",
-    "invoice_number": "INPA-50000000545",
+    "invoice_number": "INPA-50000000922",
+    "additional_attributes": {
+        "capture_token": "d9667df7-d0dc-9161-0407-790a4dd4450c"
+    },
     "gateway": {
-        "accountingDate": "1121",
-        "buyOrder": "INPA-50000000545",
-        "cardDetail": {
-            "cardNumber": "6623"
+        "capture_token": "d9667df7-d0dc-9161-0407-790a4dd4450c",
+        "payment_flow": "express_checkout",
+        "installments_number": "1",
+        "merchantReferenceCode": "INPA-50000000922",
+        "requestID": "5130438896646406704009",
+        "decision": "ACCEPT",
+        "reasonCode": "100",
+        "requestToken": "Ahj7/wSTFh8kckUIFouJilF5MUH53AKi8mKD87iYGxlHLGGTSTLdIDgL7QwJyYsPkjkihAtFxIAAghgZ",
+        "purchaseTotals": {
+            "currency": "CLP"
         },
-        "detailOutput": [
-            {
-                "sharesNumber": 0,
-                "amount": "4500",
-                "commerceCode": "597020000541",
-                "buyOrder": "INPA-50000000545",
-                "authorizationCode": "1213",
-                "paymentTypeCode": "VD",
-                "responseCode": 0
+        "ccAuthReply": {
+            "reasonCode": "100",
+            "amount": "4500",
+            "authorizationCode": "570110",
+            "avsCode": "1",
+            "authorizedDateTime": "2017-12-12T01:58:10Z",
+            "processorResponse": "1",
+            "paymentNetworkTransactionID": "111222",
+            "ownerMerchantID": "falabella",
+            "processorTransactionID": "1a28d91e00e64981b4f9e2be5f7ffe11"
+        },
+        "ccCaptureReply": {
+            "reasonCode": "100",
+            "requestDateTime": "2017-12-12T01:58:10Z",
+            "amount": "4500"
+        },
+        "additionalProcessorResponse": "fa23f52f-ea51-4b8e-962c-c8827b58f1ad",
+        "resume": {
+            "_id": "5a2f37b24bddb8000f673f27",
+            "card_number": {
+                "panLast4": 1111,
+                "panFirst6": 411111
+            },
+            "authorizations": {
+                "code": "570110"
+            },
+            "transaction": {
+                "type": "CREDIT",
+                "date": "2017-12-12T01:58:10.245Z",
+                "currency": "CLP",
+                "buy_order": "INPA-50000000922",
+                "amount": 4500,
+                "installments_number": 1
+            },
+            "response": {
+                "code": 100
             }
-        ],
-        "sessionId": "ffd9367d-5a9f-92de-fb24-0276a3156bf1",
-        "transactionDate": "2017-11-21T15:07:44.204Z",
-        "urlRedirection": "https://webpay3gint.transbank.cl/filtroUnificado/voucher.cgi",
-        "VCI": "TSY"
+        }
     }
 }
 ```
