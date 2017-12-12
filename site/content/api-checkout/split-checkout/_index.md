@@ -486,7 +486,7 @@ Con esta opción, no es requerida la aprobación del cliente para ejecutar el ca
 
 Necesitas el **access_token** obtenido en la **Autenticación** y el **id (Token de la tarjeta)** generado en la **Intención de captura**, para ejecutar una llamada a la **API de Silent Charge /silent** de la siguiente forma:
 
-{{%expand "Clic aqui para ver Ejemplo de llamada a Silent Charge" %}}
+{{%expand "[Clic aqui para ver Ejemplo de llamada a Silent Charge]" %}}
 ```
  curl -v -X POST 'https://api.sandbox.connect.fif.tech/checkout/payments/gateways/quickpay/token/{Token_de_tarjeta}/silent' \
  -H "Content-Type: application/json" \
@@ -494,7 +494,7 @@ Necesitas el **access_token** obtenido en la **Autenticación** y el **id (Token
 ```
 {{% /expand%}}
 
-{{%expand "Clic aqui para ver Ejemplo de respuesta" %}}
+{{%expand "[Clic aqui para ver Ejemplo de respuesta]" %}}
 
 ```
 {
@@ -623,7 +623,7 @@ Posibles estados de la transacción:
 
 Además, agregamos información específica del código entregado por el Gateway CyberSource (Estructura resume del JSON de respuesta).
 
-{{%expand "Clic aqui para ver Cybersource Reason Codes" %}}
+{{%expand "[Clic aqui para ver Cybersource Reason Codes]" %}}
 
 | Reason Code | Description                              |
 | ----------- | ---------------------------------------- |
