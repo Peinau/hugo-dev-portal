@@ -9,5 +9,5 @@ weight: 20
 La plataforma de Peinau ayuda a los desarrolladores a crear, hacer crecer y monetizar sus negocios.
 
 {{% notice info %}}
-¿Quieres contribuir con el contenido de PEINAU? [Más Info Aquí]({{%ref "/content/how-to-contribute.md"%}})
+¿Quieres contribuir con el contenido de PEINAU? [Más Info Aquí]({{%relref "/how-to-contribute.md"%}})
 {{% /notice %}}
