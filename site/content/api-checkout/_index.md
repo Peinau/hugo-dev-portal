@@ -8,8 +8,7 @@ weight: 10
 graph LR;
     A{APIs Checkout}
     A --> B[Split Checkout]
-    A --> C[Express Checkout]
-    C --> D[Credit]
-    C --> E[Debit checkout con Webpay Plus]
+    A --> C[Credit Express Checkout]
+    A --> D[Debit Express Checkout con Webpay Plus]
 {{< /mermaid >}}
 
