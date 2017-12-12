@@ -214,9 +214,10 @@ Una vez finalizada la transacción, PEINAU devuelve el resultado de esta a la UR
 
 Con la url **self** obtenida en el **paso 2** puedes consultar el estado de la transacción de la siguiente forma:
 
-```curl -X GET \
-  https://api.sandbox.connect.fif.tech/checkout/payments/{id} \
-  -H 'authorization: Bearer access_token
+```
+curl -X GET \
+https://api.sandbox.connect.fif.tech/checkout/payments/{id} \
+-H 'authorization: Bearer access_token
 ```
 
 > Donde access_token es el **token de acceso** generado en el **paso 1** y el **id** es el id de la intención de pago generado en el **paso 2**.
@@ -308,5 +309,3 @@ Obtendrás una respuesta similar a:
     }
 }
 ```
-
-
