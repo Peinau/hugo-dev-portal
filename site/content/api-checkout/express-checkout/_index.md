@@ -45,9 +45,10 @@ Con el **access_token** generado, ya puedes comenzar a usar nuestras APIs para c
 Para iniciar el proceso de pago debes ingresar el **access_token** generado en el **paso 1** y hacer el llamado a la API checkout de la siguiente forma:
 
 ```
+export access_token="{access_token}"
 curl -X POST 'https://api.sandbox.connect.fif.tech/checkout/payments' \
  -H "Content-Type: application/json" \
- -H "Authorization: Bearer access_token" \
+ -H "Authorization: Bearer $access_token" \
  -d '{ 
    "intent": "sale", 
    "payer": { 
