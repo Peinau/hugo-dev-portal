@@ -232,7 +232,10 @@ Con la url **self** obtenida en el **paso 2** debes consultar el estado de la tr
 ```
 curl -X GET \
 https://api.sandbox.connect.fif.tech/checkout/payments/{id} \
--H 'authorization: Bearer access_token
+ -H "Content-Type: application/json" \
+ -H "Authorization: Bearer $access_token" \
+ -d '{
+}'| json_pp
 ```
 
 > Donde access_token es el **token de acceso** generado en el **paso 1** y el **id** es el id de la intención de pago generado en el **paso 2**.
