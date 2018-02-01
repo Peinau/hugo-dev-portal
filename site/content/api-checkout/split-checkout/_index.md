@@ -51,7 +51,7 @@ curl -X POST 'https://api.sandbox.connect.fif.tech/tokenization/captures' \
  -H "Content-Type: application/json" \
  -H "Authorization: Bearer ACCESS TOKEN" \
  -d '{
-  "capture": "CREDIT_CARD",
+  "capture": "PEINAU_CAPTURE",
   "capture_method": "TOKENIZATION",
   "cardholder": {
     "reference_id": "001389",
@@ -77,7 +77,7 @@ Como respuesta obtendrás la siguiente información:
 
 ```
 {
-    "capture": "CREDIT_CARD",
+    "capture": "PEINAU_CAPTURE",
     "capture_method": "TOKENIZATION",
     "application": "28adb999-7a2e-70b8-c092-e4c16a9e9e0a",
     "redirect_urls": {
@@ -143,7 +143,7 @@ La respuesta será enviada a la página de confirmacion indicada en la variable 
 
 ```
 {
-  "capture": "CREDIT_CARD",
+  "capture": "PEINAU_CAPTURE",
   "capture_method": "TOKENIZATION",
   "application": "a3be1bc6-438a-c35e-e603-b15f2d30cfb9",
   "redirect_urls": {
