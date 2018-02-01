@@ -630,21 +630,21 @@ Además, agregamos información específica del código entregado por el Gateway
 | 100         | Successful transaction. If ccAuthReply_processorResponse is 08, you can accept the transaction if the customer provides you with identification. |
 | 101         | The request is missing one or more required fields. Possible action: see the reply fields missingField_0 through missingField_Nfor which fields are missing. Resend the request with the complete information. For information about missing or invalid fields. |
 | 102         | One or more fields in the request contains invalid data. Possible action: see the reply fields invalidField_0 through invalidField_N for which fields are invalid. Resend the request with the correct information. For information about missing or invalid fields. |
-| 104         | The merchant reference code for this authorization request matches the merchant reference code of another authorization request that you sent within the past 15 minutes.Possible action: Resend the request with a unique merchant reference code. |
+| 104         | The merchant reference code for this authorization request matches the merchant reference code of another authorization request that you sent within the past 15 minutes. Possible action: Resend the request with a unique merchant reference code. |
 | 110         | Only a partial amount was approved.      |
 | 150         | General system failure.See the documentation for your CyberSource client for information about handling retries in the case of system errors. |
 | 151         | The request was received but there was a server timeout. This error does not include timeouts between the client and the server. Possible action: To avoid duplicating the transaction, do not resend the request until you have reviewed the transaction status in the Business Center. |
-| 152         | The request was received, but a service did not finish running in time.Possible action: To avoid duplicating the transaction, do not resend the request until you have reviewed the transaction status in the Business Center. |
+| 152         | The request was received, but a service did not finish running in time. Possible action: To avoid duplicating the transaction, do not resend the request until you have reviewed the transaction status in the Business Center. |
 | 200         | The authorization request was approved by the issuing bank but declined by CyberSource because it did not pass the Address Verification System (AVS) check. Possible action: You can capture the authorization, but consider reviewing the order for the possibility of fraud. |
 | 201         | The issuing bank has questions about the request. You do not receive an authorization code programmatically, but you might receive one verbally by calling the processor.Possible action: Call your processor to possibly receive a verbal authorization. For contact phone numbers, refer to your merchant bank information. |
 | 202         | Expired card. You might also receive this value if the expiration date you provided does not match the date the issuing bank has on file. Possible action: Request a different card or other form of payment. |
 | 203         | General decline of the card. No other information was provided by the issuing bank. Possible action: Request a different card or other form of payment. |
-| 204)        | Insufficient funds in the account. Possible action: Request a different card or other form of payment. |
+| 204        | Insufficient funds in the account. Possible action: Request a different card or other form of payment. |
 | 205         | Stolen or lost card. Possible action: Review this transaction manually to ensure that you submitted the correct information. |
 | 207         | Issuing bank unavailable. Possible action: Wait a few minutes and resend the request. |
 | 208         | Inactive card or card not authorized for card-not-present transactions.Possible action: Request a different card or other form of payment. |
 | 209         | CVN did not match. Possible action: Request a different card or other form of payment. |
-| 210         | The card has reached the credit limit.Possible action: Request a different card or other form of payment. |
+| 210         | The card has reached the credit limit. Possible action: Request a different card or other form of payment. |
 | 211         | Invalid CVN. Possible action: Request a different card or other form of payment. |
 | 221         | The customer matched an entry on the processor’s negative file. Possible action: Review the order and contact the payment processor. |
 | 230         | The authorization request was approved by the issuing bank but declined by CyberSource because it did not pass the CVN check. Possible action: You can capture the authorization, but consider reviewing the order for the possibility of fraud. |
@@ -656,8 +656,8 @@ Además, agregamos información específica del código entregado por el Gateway
 | 236         | Processor failure. Possible action: Wait a few minutes and resend the request. |
 | 237         | The authorization has already been reversed. Possible action: No action required. |
 | 238         | The authorization has already been captured. Possible action: No action required. |
-| 239         | The requested transaction amount must match the previous transaction amount.Possible action: Correct the amount and resend the request. |
-| 240         | The card type sent is invalid or does not correlate with the credit card number.Possible action: Confirm that the card type correlates with the credit card number specified in the request, then resend the request. |
+| 239         | The requested transaction amount must match the previous transaction amount. Possible action: Correct the amount and resend the request. |
+| 240         | The card type sent is invalid or does not correlate with the credit card number. Possible action: Confirm that the card type correlates with the credit card number specified in the request, then resend the request. |
 | 241         | The request ID is invalid. Possible action: Request a new authorization, and if successful, proceed with the capture. |
 | 242         | You requested a capture, but there is no corresponding, unused authorization record. Occurs if there was not a previously successful authorization request or if the previously successful authorization has already been used by another capture request. Possible action: Request a new authorization, and if successful, proceed with the capture. |
 | 243         | The transaction has already been settled or reversed. Possible action: No action required. |
