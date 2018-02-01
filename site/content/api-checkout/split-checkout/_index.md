@@ -181,7 +181,7 @@ Tabla de posibles respuestas:
 | State    | Definición                               |
 | -------- | ---------------------------------------- |
 | captured | Se ha capturado la información de la tarjeta |
-| canceled | Ocurrio un error y no se pudo completar la captura |
+| rejected | Ocurrio un error y no se pudo completar la captura |
 
 ### 4. Intención de Pago
 
@@ -477,8 +477,8 @@ Posibles estados de la transacción:
 | State    | Definición                               |
 | -------- | ---------------------------------------- |
 | paid  | El cargo fue realizado exitosamente en la cuenta del cliente |
-| canceled | El cargo no fue realizado |
-| reversed | Tiene al menos una devolución asociada |
+| rejected | El cargo no fue realizado |
+| refunded | Tiene al menos una devolución asociada |
 
 #### 5.2 Silent Charge
 
@@ -618,8 +618,8 @@ Posibles estados de la transacción:
 | State    | Definición                               |
 | -------- | ---------------------------------------- |
 | paid  | El cargo fue realizado exitosamente en la cuenta del cliente |
-| canceled | El cargo no fue realizado |
-| reversed | Tiene al menos una devolución asociada |
+| rejected | El cargo no fue realizado |
+| refunded | Tiene al menos una devolución asociada |
 
 Además, agregamos información específica del código entregado por el Gateway CyberSource (Estructura resume del JSON de respuesta).
 
