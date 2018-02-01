@@ -318,8 +318,8 @@ Como respuesta obtendrás la siguiente información:
             "method": "REDIRECT"
         },
         {
-            "href": "https://api.sandbox.connect.fif.tech/checkout/payments/gateways/quickpay/token/4422ad2b-7285-a953-2bfc-400b8318d517/reverse",
-            "rel": "reverse_method",
+            "href": "https://api.sandbox.connect.fif.tech/checkout/payments/gateways/quickpay/token/4422ad2b-7285-a953-2bfc-400b8318d517/refund",
+            "rel": "refund_method",
             "method": "POST"
         },
         {
@@ -340,7 +340,7 @@ Obtendrás los Links:
 
 - **self**: desde esta URL puedes consultar la información de la captura.
 - **approval_url**: desde esta URL el cliente debe autorizar el pago.
-- **reverse_method**: para anular la transacción, debes hacer el llamado a este endpoint desde la **API de Anulación**.
+- **refund_method**: para anular la transacción, debes hacer el llamado a este endpoint desde la **API de Anulación**.
 - **silent_charge**: llamando a este endpoint desde la **API silent_charge** puedes ejecutar el cargo a la tarjeta de cŕedito del cliente sin pasar por la intención de pago.
 
 ### 5. ¿Cómo realizar el cargo a la tarjeta?
