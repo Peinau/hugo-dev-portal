@@ -25,7 +25,9 @@ curl -v -X POST https://api.sandbox.connect.fif.tech/sso/oauth2/v2/token \
  -d "grant_type=client_credentials" | json_pp
 ```
 
-> El **CLIENT_ID** y **CLIENT_SECRET** utilizados en esta petición son datos de prueba.
+> Credenciales de prueba:
+> * **CLIENT_ID:** 641281901508761220281
+> * **CLIENT_SECRET:** B8WKRXMiWHHrMCectt9Rg3ju4Y8GNheEa50gx6365sBV
 
 Como respuesta obtendrás el **access_token**:
 
