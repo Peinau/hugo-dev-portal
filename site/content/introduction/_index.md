@@ -16,7 +16,7 @@ graph LR;
     B --> C{Medio de Pago}
     C --> D[Transbank Webpay]
     C --> E[CMR]
-    C --> F[Debito Banco Falabella]
+    C --> F[Débito Banco Falabella]
     C --> G[Quickpay Token]
     D --> I[Comercio]
     E --> I[Comercio]
