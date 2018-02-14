@@ -1,9 +1,3 @@
----
-title: "Credit Express Checkout"
-description: ""
-weight: 10
----
-
 Con esta solución sólo debes mostrar un formulario al cliente, esto facilitará el proceso de checkout.
 
 Para integrarte debes seguir los siguientes pasos:
