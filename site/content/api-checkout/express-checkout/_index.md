@@ -188,8 +188,8 @@ Como respuesta obtendrás la siguiente información:
             "method": "POST"
         },
         {
-            "href": "https://api.sandbox.connect.fif.tech/checkout/payments/gateways/quickpay/token/864f3629-07a1-56d1-31a9-cce39026b9a1/reverse",
-            "rel": "reverse_method",
+            "href": "https://api.sandbox.connect.fif.tech/checkout/payments/gateways/quickpay/token/864f3629-07a1-56d1-31a9-cce39026b9a1/refund",
+            "rel": "refund_method",
             "security": [
                 "Jwt"
             ],
@@ -209,7 +209,7 @@ Obtendrás los Links:
 - **self**: desde esta URL puedes consultar la información de la captura.
 - **approval_url**: debes desplegar esta URL al cliente para que pueda continuar con el pago.
 - **silent_charge**: con esta opción, no es requerida la aprobación del cliente para ejecutar el cargo a la tarjeta de crédito (debes tener el token de la tarjeta).
-- **reverse_method**: te permite anular la transacción.
+- **refund_method**: te permite anular la transacción.
 
 ## 3. Mostrar Formulario de Pago
 
