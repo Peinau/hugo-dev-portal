@@ -185,11 +185,11 @@ Detalle de las URLs generadas:
 
 Con la **capture_url** obtenida en el **paso 2** puedes desplegar el formulario de captura de tarjeta. [Puedes hacer clic aquí para ver un ejemplo de capture_url](https://api.sandbox.connect.fif.tech/tokenization/captures/gateways/credit/card/42743d48-7699-0d00-ef45-a68c587e662d/capture)
 
-![Ejemplo de ventana Formulario](/images/captura-tarjeta-1.png)
+![Ejemplo de ventana Formulario](/introduction/images/captura-tarjeta-1.png)
 
 El cliente debe ingresar los datos solicitados en el formulario y hacer clic en **Usar esta tarjeta** para obtener el token de la tarjeta de crédito.
 
-![Ejemplo datos a ingresar](/images/captura-tarjeta-2.png)
+![Ejemplo datos a ingresar](/introduction/images/captura-tarjeta-2.png)
 
 La respuesta será enviada a la página de confirmacion indicada en la variable **"return_url"** de la petición a la **API de intención de Captura (paso 2)** o puedes consultar dicha respuesta llamando a la **API Revisión de Captura** de la siguiente forma:
 
@@ -411,7 +411,7 @@ Te ofrecemos dos opciones para realizar el cargo a la tarjeta del cliente, a con
 
 Si quieres utilizar esta opción, necesitas que el cliente apruebe el pago para ejecutar el cargo a la tarjeta de crédito. Para ello debes desplegar la ventana de aprobación del pago a partir de la [approval_url](https://quickpay-connect-checkout.azurewebsites.net/payments/gateways/quickpay/token/0fdcd938-62c7-aab2-5048-c2f172d495ac/pay) obtenida en el **paso 3**.
 
-![Ejemplo Approval](/images/approval-1.png)
+![Ejemplo Approval](/introduction/images/approval-1.png)
 
 Si recibes una respuesta con **"state": "paid"** en la URL indicada como **return_url** o consultando desde la **URL self**, entonces el cliente ha aprobado del pago y se ejecuta el cargo a la tajeta de crédito.
 
@@ -740,7 +740,7 @@ Para integrarte debes seguir los siguientes pasos:
 
 Al completar el registro de la aplicación (Alta del Comercio), obtendrás dos llaves con las cuales te podrás autenticar en el sistema, a estas les llamamos **client_id** (identificador) y **client_secret** (Clave Secreta).
 
-![Ejemplo de client_id y client_secret](/images/portal-1.png)
+![Ejemplo de client_id y client_secret](/introduction/images/portal-1.png)
 
 Con estas credenciales podrás obtener el **token de acceso** llamando a la **API de Autenticación** de la siguiente forma:
 
@@ -1101,7 +1101,7 @@ Para integrarte debes seguir los siguientes pasos:
 
 Al completar el registro de la aplicación (Alta del Comercio), obtendrás dos llaves con las cuales te podrás autenticar en el sistema, a estas les llamamos **client_id** (identificador) y **client_secret** (Clave Secreta).
 
-![Ejemplo de client_id y client_secret](/images/portal-1.png)
+![Ejemplo de client_id y client_secret](/introduction/images/portal-1.png)
 
 Con estas credenciales podrás obtener el **token de acceso** llamando a la **API de Autenticación** de la siguiente forma:
 
