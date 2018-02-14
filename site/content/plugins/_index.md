@@ -1,3 +1,5 @@
+# Plugins
+
 {{%expand "PRESTASHOP" %}}
 
 # Módulo Prestashop para Peinau
