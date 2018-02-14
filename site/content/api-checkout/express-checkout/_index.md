@@ -8,7 +8,7 @@ Con esta solución sólo debes mostrar un formulario al cliente, esto facilitar�
 
 Para integrarte debes seguir los siguientes pasos:
 
-##  {{< relref "# 1. Obtener un Token de Acceso" >}}
+## 1. Obtener un Token de Acceso
 
 Al completar el registro de la aplicación (Alta del Comercio), obtendrás dos llaves con las cuales te podrás autenticar en el sistema, a estas les llamamos **client_id** (identificador) y **client_secret** (Clave Secreta).
 
