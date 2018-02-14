@@ -1,5 +1,5 @@
 ---
-title: "1. PEINAU"
+title: "PEINAU"
 description: ""
 weight: 10
 ---
