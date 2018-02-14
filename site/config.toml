@@ -23,6 +23,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [[menu.main]]
 name = "Token"
+pre = "<i class='fa fa-road'></i>"
 weight = -110
 url = "http://dev-portal.sandbox.connect.fif.tech/introduction/#1-obtener-un-token-de-acceso"
 
