@@ -1,9 +1,3 @@
----
-title: "Split Checkout (captura de tarjeta + pago)"
-description: ""
-weight: 20
----
-
 La integración mediante nuestra API te da un mayor control sobre el checkout en tu sitio, ya que el proceso se divide en dos etapas: Obtener un token de la tarjeta de crédito y realizar el cargo, y estas pueden ocurrir en momentos distintos.
 
 Los pasos para realizar la integración son:
