@@ -21,9 +21,9 @@ apiUrl = "https://api.sandbox.connect.fif.tech"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
-[[menu.main]]
+[[menu.docs]]
 name = "Token"
 pre = "<i class='fa fa-road'></i>"
-weight = -110
+weight = 10
 url = "/introduction/#1-obtener-un-token-de-acceso/"
 
