@@ -24,7 +24,11 @@ graph LR;
     G --> I[Comercio]
 {{< /mermaid >}}
 
-# ¿Cómo integrar nuestra pasarela de pagos?
+---
+title: "¿Cómo integrar nuestra pasarela de pagos?"
+description: ""
+weight: 20
+---
 
 Te ofrecemos diversas opciones de integración para que puedas adaptar nuestro producto a las necesidades de tu negocio.
 
