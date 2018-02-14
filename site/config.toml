@@ -21,9 +21,19 @@ apiUrl = "https://api.sandbox.connect.fif.tech"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
-[[menu.docs]]
-name = "Token"
-pre = "<i class='fa fa-road'></i>"
+[[menu.shortcuts]]
+pre = "<h3>More</h3>"
+name = "<i class='fa fa-github'></i>&nbsp;&nbsp;&nbsp;Github repo"
+identifier = "ds"
+url = "https://github.com/Peinau/hugo-dev-portal"
 weight = 10
-url = "/introduction/#1-obtener-un-token-de-acceso/"
 
+[[menu.shortcuts]]
+name = "<i class='fa fa-bullhorn'></i>&nbsp;&nbsp;&nbsp;How to Contribute"
+url = "/how-to-contribute"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-bullhorn'></i>&nbsp;&nbsp;&nbsp;Credits"
+url = "/credits"
+weight = 30
