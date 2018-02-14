@@ -23,9 +23,3 @@ graph LR;
     F --> I[Comercio]
     G --> I[Comercio]
 {{< /mermaid >}}
-
----
-title: "2. Integracion"
-description: ""
-weight: 10
----
