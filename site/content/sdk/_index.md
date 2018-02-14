@@ -1,8 +1,4 @@
----
-title: "4. SDKs"
-description: ""
-weight: 10
----
+# SDK
 
 {{%expand "SDK Javascript" %}}  
 ---------------
