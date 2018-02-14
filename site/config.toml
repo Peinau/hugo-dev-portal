@@ -22,8 +22,8 @@ apiUrl = "https://api.sandbox.connect.fif.tech"
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.main]]
-name = "<i class='fa fa-github'></i>&nbsp;&nbsp;&nbsp;Seccion2"
-identifier = "Seccion2"
+name = "Token"
+identifier = "Obtener un Token de Acceso"
 url = "http://dev-portal.sandbox.connect.fif.tech/introduction/#1-obtener-un-token-de-acceso"
 weight = 40
 
