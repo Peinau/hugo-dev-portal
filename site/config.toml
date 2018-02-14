@@ -22,12 +22,6 @@ apiUrl = "https://api.sandbox.connect.fif.tech"
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-github'></i>&nbsp;&nbsp;&nbsp;Seccion2"
-identifier = "Seccion2"
-url = "http://dev-portal.sandbox.connect.fif.tech/api-checkout/express-checkout/#2-intención-de-pago"
-weight = 0
-
-[[menu.shortcuts]]
 pre = "<h3>More</h3>"
 name = "<i class='fa fa-github'></i>&nbsp;&nbsp;&nbsp;Github repo"
 identifier = "ds"
@@ -43,3 +37,9 @@ weight = 20
 name = "<i class='fa fa-bullhorn'></i>&nbsp;&nbsp;&nbsp;Credits"
 url = "/credits"
 weight = 30
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-github'></i>&nbsp;&nbsp;&nbsp;Seccion2"
+identifier = "Seccion2"
+url = "http://dev-portal.sandbox.connect.fif.tech/api-checkout/express-checkout/#2-intención-de-pago"
+weight = 40
