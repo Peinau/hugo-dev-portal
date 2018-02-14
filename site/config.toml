@@ -41,5 +41,5 @@ weight = 30
 [[menu.shortcuts]]
 name = "<i class='fa fa-github'></i>&nbsp;&nbsp;&nbsp;Seccion2"
 identifier = "Seccion2"
-url = "http://dev-portal.sandbox.connect.fif.tech/api-checkout/express-checkout/#2-intención-de-pago"
+url = "http://dev-portal.sandbox.connect.fif.tech/api-checkout/#1-obtener-un-token-de-acceso"
 weight = 40
