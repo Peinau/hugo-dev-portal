@@ -1,9 +1,3 @@
----
-title: "3. API Checkout"
-description: ""
-weight: 10
----
-
 {{<mermaid align="left">}}
 graph LR;
     A{API Checkout}
