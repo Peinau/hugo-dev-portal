@@ -21,11 +21,11 @@ apiUrl = "https://api.sandbox.connect.fif.tech"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
-[[menu.main]]
+[[menu.shortcuts]]
 name = "<i class='fa fa-github'></i>&nbsp;&nbsp;&nbsp;Seccion2"
 identifier = "Seccion2"
 url = "http://dev-portal.sandbox.connect.fif.tech/api-checkout/express-checkout/#2-intención-de-pago"
-weight = -20
+weight = 0
 
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
