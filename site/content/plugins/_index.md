@@ -1,9 +1,3 @@
----
-title: "5. Plugins"
-description: ""
-weight: 10
----
-
 {{%expand "PRESTASHOP" %}}
 
 # Módulo Prestashop para Peinau
