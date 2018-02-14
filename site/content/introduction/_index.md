@@ -15,10 +15,9 @@ graph LR;
     A[Comercio] -->|Proceso de Pago| B(Peinau)
     B --> C{Medio de Pago}
     C --> D[Transbank Webpay]
-    C --> E[CMR Crédito]
-    C --> F[CMR Debito]
+    C --> E[CMR]
+    C --> F[Debito Banco Falabella]
     C --> G[Quickpay Token]
-    C --> H[Banco Falabella]
     D --> I[Comercio]
     E --> I[Comercio]
     F --> I[Comercio]
