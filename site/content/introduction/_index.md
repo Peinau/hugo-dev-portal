@@ -22,5 +22,4 @@ graph LR;
     E --> I[Comercio]
     F --> I[Comercio]
     G --> I[Comercio]
-    H --> I[Comercio]
 {{< /mermaid >}}
