@@ -25,7 +25,7 @@ home = [ "HTML", "RSS", "JSON"]
 name = "Token"
 identifier = "Obtener un Token de Acceso"
 url = "http://dev-portal.sandbox.connect.fif.tech/introduction/#1-obtener-un-token-de-acceso"
-weight = 40
+weight = -110
 
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
