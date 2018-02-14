@@ -10,6 +10,7 @@ Los pasos para realizar la integración son:
 
 ### 1. Obtener un Token de Acceso
 
+[Ir a seccion 2](http://dev-portal.sandbox.connect.fif.tech/api-checkout/split-checkout/#2-crear-una-intención-de-captura)
 Al completar el registro de la aplicación (Alta del Comercio), obtendrás dos llaves con las cuales te podrás autenticar en el sistema, a estas les llamamos **client_id** (identificador) y **client_secret** (Clave Secreta).
 
 ![Ejemplo de client_id y client_secret](/api-checkout/split-checkout/images/portal-1.png)
