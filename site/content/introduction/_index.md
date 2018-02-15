@@ -24,7 +24,7 @@ graph LR;
     G --> I[Comercio]
 {{< /mermaid >}}
 
-#Integración
+# Integración
 
 Te ofrecemos diversas opciones de integración para que puedas adaptar nuestro producto a las necesidades de tu negocio.
 
